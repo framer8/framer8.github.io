@@ -1,0 +1,30 @@
+---
+layout: post
+title: Groovy test
+---
+    
+```groovy
+boolean isAt(Class<? extends Page> pageType, boolean allowAtCheckWaiting = true) {
+		def page = initialisePage(createPage(pageType))
+		def isAt = page.verifyAtSafely(allowAtCheckWaiting)
+		if (isAt) {
+			makeCurrentPage(page)
+		}
+		isAt
+	}
+```
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+below should be a block
+
+    i am in the block
+	
+out of block again
+    
+	
+> i am a quote

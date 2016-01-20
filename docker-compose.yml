@@ -1,0 +1,19 @@
+jekyll:
+  image: jekyll/jekyll:pages
+  ports:
+   - "80:80"
+   - "4000:4000"
+  environment:
+   - POLLING=true
+   - VERBOSE=true 
+  volumes:
+   - ".:/srv/jekyll"
+   
+pages:
+  image: andredumas/github-pages
+  ports:
+   - "4000:4000" 
+  volumes:
+   - ".:/site"
+  command: serve --watch --force_polling
+   
