@@ -2,7 +2,7 @@
 layout: post
 title: Groovy test
 ---
-    
+
 ```groovy
 boolean isAt(Class<? extends Page> pageType, boolean allowAtCheckWaiting = true) {
 		def page = initialisePage(createPage(pageType))
@@ -14,11 +14,15 @@ boolean isAt(Class<? extends Page> pageType, boolean allowAtCheckWaiting = true)
 	}
 ```
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+
+
+ stylesheets/pygment_trac.css
+
+    ruby
+    require 'redcarpet'
+    markdown = Redcarpet.new("Hello World!")
+    puts markdown.to_html
+
 
 below should be a block
 
