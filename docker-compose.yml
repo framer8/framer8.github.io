@@ -1,5 +1,6 @@
 pages:
-  image: andredumas/github-pages
+ # image: andredumas/github-pages
+  image: framer8/github-pages-pigments
   ports:
    - "4000:4000" 
   volumes:
